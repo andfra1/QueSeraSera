@@ -1,0 +1,83 @@
+.login {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  &__wrapper {
+    box-sizing: border-box;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    padding: 20px;
+    border: 2px solid $color1;
+    background-color: $color3;
+    text-align: center;
+  }
+  &__form {
+    padding: 20px;
+    padding-bottom: 0;
+  }
+  &__error {
+    font-size: 0.8rem;
+    color: red;
+    margin: 0 0 10px 0;
+  }
+}
+
+.box {
+  &__label {
+    position: relative;
+    &Text {
+      margin: 5px;
+      font-size: 0.8rem;
+      text-align: left;
+    }
+  }
+  &__field {
+    box-sizing: border-box;
+    width: 100%;
+    height: 40px;
+    border: 2px solid $color1;
+    border-radius: 5px;
+    background-color: $color2;
+    margin: 5px 0 10px 0;
+    box-shadow: inset 2px 2px $color3;
+    z-index: 1;
+    &Input {
+      box-sizing: border-box;
+      font-size: 1.6em;
+      text-align: left;
+      width: 100%;
+      height: 100%;
+      border-radius: 5px;
+      padding: 0 10px;
+      background: none;
+      background-color: transparent;
+      z-index: 2;
+    }
+  }
+  &__select {
+    &Button {
+      padding: 8px 20px;
+      background-color: $color1;
+      border: 2px solid $color1;
+      border-radius: 5px;
+      margin-top: 10px;
+      margin-left: auto;
+      margin-right: 0;
+      font-size: 1rem;
+      transition: background 0.3s;
+      &:hover {
+        background-color: $color3;
+      }
+    }
+  }
+}
+
+.svg--logo {
+  width: 120px;
+  margin: 10px auto;
+}
