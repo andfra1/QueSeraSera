@@ -40,7 +40,7 @@ if(!isset($_SESSION['login'])) {
 				</ul>
 			</div>
 
-			<div class="mainWindow"> 30 min pracy ;] </div>
+			<div class="mainWindow"></div>
 		</div>
 
 		<?php
