@@ -29,9 +29,6 @@ $defaultMail = "some@some.com";
 						if($_SERVER['QUERY_STRING'] == 'signup=registered') {
 							echo "Halleluyah! You made it!";
 						}
-						if($_SERVER['QUERY_STRING'] == 'signup=wtf') {
-							echo "Tak nie można.";
-						}
 						?>
 				</p>
 				<div class="row">
@@ -41,8 +38,8 @@ $defaultMail = "some@some.com";
 						</label>
 					</div>
 					<div class="box box__field">
-						<div class="borderOnly"></div>
 						<input type="text" id="fname" name="fname" class="box__fieldInput" value="<?= $defaultFName?>">
+						<div class="borderOnly"></div>
 					</div>
 				</div>
 				<div class="row">
@@ -52,8 +49,8 @@ $defaultMail = "some@some.com";
 						</label>
 					</div>
 					<div class="box box__field">
-						<div class="borderOnly"></div>
 						<input type="text" id="lname" name="lname" class="box__fieldInput" value="<?= $defaultLName?>">
+						<div class="borderOnly"></div>
 					</div>
 				</div>
 				<div class="row">
@@ -63,8 +60,8 @@ $defaultMail = "some@some.com";
 						</label>
 					</div>
 					<div class="box box__field">
-						<div class="borderOnly"></div>
 						<input type="text" id="mail" name="mail" class="box__fieldInput" value="<?= $defaultMail?>">
+						<div class="borderOnly"></div>
 					</div>
 				</div>
 				<div class="row">
@@ -74,8 +71,8 @@ $defaultMail = "some@some.com";
 						</label>
 					</div>
 					<div class="box box__field">
-						<div class="borderOnly"></div>
 						<input type="text" id="login" name="login" class="box__fieldInput">
+						<div class="borderOnly"></div>
 					</div>
 				</div>
 				<div class="row">
@@ -83,14 +80,14 @@ $defaultMail = "some@some.com";
 						<label class="box__labelText" for="password">Password</label>
 					</div>
 					<div class="box box__field">
-						<div class="borderOnly"></div>
 						<input type="password" id="password" class="box__fieldInput" name="password">
+						<div class="borderOnly"></div>
 					</div>
 				</div>
 				<div class="row">
 					<div class="box box__field box__field--button">
-						<div class="borderOnly borderOnly--button"></div>
 						<input type="submit" name="submit" value="Signin" class="box__fieldButton">
+						<div class="borderOnly borderOnly--button"></div>
 					</div>
 				</div>
 		</div>

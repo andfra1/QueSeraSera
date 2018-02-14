@@ -30,8 +30,8 @@ include_once (ROOT . "html/inc/head.php");
 							<label class="box__labelText" for="login">Login</label>
 						</div>
 						<div class="box box__field">
-						<div class="borderOnly"></div>
 							<input type="text" id="login" name="login" class="box__fieldInput">
+							<div class="borderOnly"></div>
 						</div>
 					</div>
 					<div class="row">
@@ -39,14 +39,14 @@ include_once (ROOT . "html/inc/head.php");
 							<label class="box__labelText" for="password">Password</label>
 						</div>
 						<div class="box box__field">
-						<div class="borderOnly"></div>
 							<input type="password" id="password" class="box__fieldInput" name="password">
+							<div class="borderOnly"></div>
 						</div>
 					</div>
 					<div class="row">
 						<div class="box box__field box__field--button">
-							<div class="borderOnly borderOnly--button"></div>
 							<input type="submit" name="submit" value="Login" class="box__fieldButton">
+							<div class="borderOnly borderOnly--button"></div>
 						</div>
 					</div>
 				</form>

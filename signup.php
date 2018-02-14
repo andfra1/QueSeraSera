@@ -1,6 +1,7 @@
 <?php
-
-if (isset($_POST['submit'])) { //checks if 'submit' button used
+if (isset($_POST['submit']) //check if submitted
+&& strstr($_SERVER['HTTP_REFERER'],'.php',true) == 'http://localhost/QueSeraSera/signup_form') //and sended from this URL
+{
   include_once("dbdata.php");
 
   $fname = mysqli_real_escape_string($conn, $_POST['fname']);
@@ -49,7 +50,7 @@ if (isset($_POST['submit'])) { //checks if 'submit' button used
   }
 }
 else {
-  header("Location: signup_form.php?signup=wtf");
+  header("Location: signup_form.php?wtf");
   exit();
 }
 ?>
