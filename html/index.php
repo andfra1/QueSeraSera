@@ -1,14 +1,20 @@
 
-	<?php
-include_once ("../../config.php");
-include_once (ROOT . "html/core/head.php");
+<?php
+include_once ("../path.php");
+include_once (ROOT . "html/inc/head.php");
+if(!isset($_SESSION['login'])) {
+	header("Location: ../");
+	exit();
+}
 ?>
 
 		<div class="wrapperPanel">
 			<div class="side">
 				<div class="account">
-					<p>Witaj
-						
+					<p>Hawk, <?=$_SESSION['fname']?>!</p>
+						<form action="logout.php" method="POST">
+							<button type="submit" name="submit">Logout</button>
+						</form>
 				</div>
 				<ul class="side__menu">
 					<li class="side__menuItem">item 1</li>
@@ -38,5 +44,5 @@ include_once (ROOT . "html/core/head.php");
 		</div>
 
 		<?php
-	include_once (ROOT . "html/core/footer.php");
+	include_once (ROOT . "html/inc/footer.php");
 ?>
