@@ -4,10 +4,19 @@
   border: 0;
 }
 
+a, a:link, a:visited, a:focus {
+  text-decoration: none;
+  color: inherit;
+}
+
 label,
 input,
 svg {
   display: block;
   font-family: inherit;
   outline: none;
+}
+
+ul {
+  list-style: none;
 }
