@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   border: 0;
+  box-sizing: border-box;
 }
 
 a, a:link, a:visited, a:focus {
@@ -10,8 +11,7 @@ a, a:link, a:visited, a:focus {
 }
 
 label,
-input,
-svg {
+input{
   display: block;
   font-family: inherit;
   outline: none;
@@ -19,4 +19,8 @@ svg {
 
 ul {
   list-style: none;
+}
+
+small {
+font-size: 0.85em;
 }

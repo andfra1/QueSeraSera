@@ -7,12 +7,16 @@ if(!isset($_SESSION['login'])) {
 }
 ?>
 
-	<div class="wrapperPanel">
-		<?php
+  <div class="wrapperPanel">
+    <?php
 		include_once('comp/panel-menu.php');
 		?>
 
-		<div class="mainWindow">
-			Welcome Page
-		</div>
-	</div>
+    <div class="mainWindow">
+      Settings
+    </div>
+
+
+<?php
+	include_once (ROOT . "html/inc/footer.php");
+?>
