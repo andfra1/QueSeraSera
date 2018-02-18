@@ -3,7 +3,7 @@
   top: 0;
   left: 0;
   @include fullSize;
-  background: linear-gradient(to bottom, $grad1, $grad2);
+  background: linear-gradient(to left bottom, #37ffff, #170017,  #170017);
   &__wrapper {
     @include center;
     width: 330px;

@@ -12,11 +12,15 @@ if(!isset($_SESSION['login'])) {
 		include_once('comp/panel-menu.php');
 		?>
 
-    <div class="mainWindow">
-      Settings
+    <div class="main">
+      <h3>
+        Settings
+      </h3>
+      <p>
+        Nothing here :(
+      </p>
     </div>
 
-
-<?php
+    <?php
 	include_once (ROOT . "html/inc/footer.php");
 ?>

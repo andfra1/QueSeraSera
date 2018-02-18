@@ -3,7 +3,7 @@
   display: inline-block;
   width: 200px;
   height: 100%;
-  background-color: dimgray;
+  background-color: transparent;
   color: $light;
   font-size: 1.2rem;
   vertical-align: top;
@@ -20,7 +20,8 @@
       display: block;
       margin: 5px 0;
       transition: all 0.4s;
-      background-color: $dim;
+      //background-color: $dim;
+      background-color: $light02;
       height: 35px;
       & svg {
         transition: all 0.4s;

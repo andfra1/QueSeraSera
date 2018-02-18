@@ -5,28 +5,30 @@ if(!isset($_SESSION['login'])) {
 	header("Location: ../");
 	exit();
 }
+
 ?>
 
   <div class="wrapperPanel">
     <?php
 		include_once('comp/panel-menu.php');
     ?>
-    
-    <div class="main">
-      <?php
+
+      <div class="main">
+        <?php
     //post creation
       if($_SERVER['QUERY_STRING'] == 'create') {
     ?>
-        <h3>
-          Post create
-        </h3>
-        
-        <input type="text" value="Post title">
-        <textarea name="" id="" cols="30" rows="10">Some text here</textarea>
-        <button class="btn">
-          save
-        </button>
-        <!--
+          <h3>
+            Post create
+          </h3>
+          <form action="comp/addPost.php" method="POST">
+            <input type="text" name="post-title" value="Post title">
+            <textarea name="post-content" id="" cols="30" rows="10">Some text here</textarea>
+            <button class="btn" name="submit" type="submit">
+              save
+            </button>
+          </form>
+          <!--
         <button class="btn jsAddRow">
           add row
         </button>
@@ -54,16 +56,69 @@ if(!isset($_SESSION['login'])) {
           save
         </button>
         -->
-        <?php
+          <?php
       }
       //posts list
       else {
-        echo 'All posts will be displayed here';
+        ?>
+        <h3>
+        Posts list
+      </h3>
+      <?php
+        include_once('../dbdata.php');
+
+        $sql = "SELECT * FROM `posts` WHERE 1";
+        $result = mysqli_query($conn, $sql);
+        $resultCheck = mysqli_num_rows($result);
+        if ($resultCheck > 0) {
+          // output data of each row
+          ?>
+          <table class="queryTable">
+              <thead>
+                <tr>
+                  <td>
+                    ID
+                  </td>
+                  <td>
+                    Title
+                  </td>
+                  <td>
+                    Last update
+                  </td>
+                </tr>
+              </thead>
+              <tbody>
+            
+          <?php
+          while($row = $result->fetch_assoc()):
+            ?>
+                <tr>
+                  <td>
+                    <?=$row["post id"]?>
+                  </td>
+                  <td>
+                    <?=$row["post title"]?>
+                  </td>
+                  <td>
+                    <?=$row["post update"]?>
+                  </td>
+                </tr>
+
+            <?php
+          endwhile;
+          ?>
+            </tbody>
+            </table>
+          <?php
+      } else {
+          echo "0 results";
+      }
+      $conn->close();
       }
     ?>
-    </div>
+      </div>
 
 
-    <?php
+      <?php
 	include_once (ROOT . "html/inc/footer.php");
 ?>

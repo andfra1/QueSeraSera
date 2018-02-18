@@ -93,14 +93,14 @@
 					</a>
 					<ul class="side__subMenu">
 					<li class="side__subMenuItem">
-							<a href="#">
+							<a href="panel-accounts.php">
 								<div class="menuItem__text">
 									all accounts
 								</div>
 							</a>
 						</li>
 						<li class="side__subMenuItem">
-							<a href="#">
+							<a href="panel-accounts.php?create">
 								<div class="menuItem__text">
 									add account
 								</div>

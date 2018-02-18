@@ -1,6 +1,6 @@
 <?php
 if (isset($_POST['submit']) //check if submitted
-&& strstr($_SERVER['HTTP_REFERER'],'.php',true) == 'http://localhost/QueSeraSera/signup_form') //and sended from this URL
+//&& strstr($_SERVER['HTTP_REFERER'],'.php',true) == 'http://localhost/QueSeraSera/signup_form') //and sended from this URL
 {
   include_once("../../dbdata.php");
 

@@ -12,7 +12,12 @@ if(!isset($_SESSION['login'])) {
 		include_once('comp/panel-menu.php');
 		?>
 
-		<div class="mainWindow">
-			Welcome Page
-		</div>
+<div class="main">
+      <h3>
+        Welcome!
+      </h3>
+      <p>
+        
+      </p>
+    </div>
 	</div>

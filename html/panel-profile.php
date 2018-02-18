@@ -12,8 +12,13 @@ if(!isset($_SESSION['login'])) {
 		include_once('comp/panel-menu.php');
 		?>
 
-    <div class="mainWindow">
-      Profile
+<div class="main">
+      <h3>
+        Profile
+      </h3>
+      <p>
+        Nothing here :(
+      </p>
     </div>
 
 
