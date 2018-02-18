@@ -28,3 +28,31 @@ svg {
   color: $light;
   fill: $light;
 }
+
+.btn {
+  padding: 7px 10px;
+  margin: 5px;
+  background-color: #ccc;
+}
+
+$headerSize: 3rem;
+
+h1 {
+  font-size: $headerSize;
+}
+
+h2 {
+  font-size: $headerSize/1.5;
+}
+
+h3 {
+  font-size: $headerSize/2;
+}
+
+h4 {
+  font-size: $headerSize/2.5;
+}
+
+h5 {
+  font-size: $headerSize/3;
+}

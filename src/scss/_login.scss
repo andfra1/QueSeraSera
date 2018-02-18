@@ -17,6 +17,9 @@
   }
   &__form {
     padding: 20px;
+    > .row {
+      margin: 5px 0 15px 0;
+    }
   }
   &__error {
     font-size: 0.8rem;
@@ -29,11 +32,6 @@
     margin: 0 0 10px 0;
   }
 }
-
-.row {
-  margin: 5px 0 15px 0;
-}
-
 .box {
   position: relative;
   &__label {

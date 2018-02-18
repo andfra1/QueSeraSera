@@ -1,4 +1,4 @@
-<script src="<?= URL ?>dist/main.js"></script>
+<script src="<?= URL ?>dist/script.js"></script>
 
 </body>
 </html>

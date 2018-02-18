@@ -38,6 +38,23 @@
 							posts
 						</div>
 					</a>
+					<ul class="side__subMenu">
+					<li class="side__subMenuItem">
+							<a href="panel-posts.php">
+								<div class="menuItem__text">
+									all posts
+								</div>
+							</a>
+						</li>
+						<li class="side__subMenuItem">
+							<a href="panel-posts.php?create">
+								<div class="menuItem__text">
+									create a post
+								</div>
+							</a>
+						</li>
+						
+					</ul>
 				</li>
 				<li class="side__menuItem">
 					<a href="panel-settings.php">
@@ -49,6 +66,13 @@
 						</div>
 					</a>
 					<ul class="side__subMenu">
+					<li class="side__subMenuItem">
+						<a href="panel-profile.php">
+								<div class="menuItem__text">
+									panel
+								</div>
+							</a>
+						</li>
 						<li class="side__subMenuItem">
 						<a href="panel-profile.php">
 								<div class="menuItem__text">
@@ -68,10 +92,24 @@
 						</div>
 					</a>
 					<ul class="side__subMenu">
+					<li class="side__subMenuItem">
+							<a href="#">
+								<div class="menuItem__text">
+									all accounts
+								</div>
+							</a>
+						</li>
 						<li class="side__subMenuItem">
 							<a href="#">
 								<div class="menuItem__text">
-									privileges
+									add account
+								</div>
+							</a>
+						</li>
+						<li class="side__subMenuItem">
+							<a href="#">
+								<div class="menuItem__text">
+									set privileges
 								</div>
 							</a>
 						</li>

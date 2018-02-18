@@ -81,9 +81,9 @@ gulp.task('js', function() {
 	])
 	.pipe(concat('script.js'))
 	.pipe(gulp.dest('dist/'))
-	//.pipe(stripdebug())
+	.pipe(stripdebug())
 	//.pipe(uglify())
-	//.pipe(gulp.dest('dist/'))
+	.pipe(gulp.dest('dist/'))
 	.pipe(notification({ message: 'Scripts task complete' }));
 });
 
