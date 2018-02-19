@@ -1,9 +1,10 @@
 .main {
   .row {
     font-size: 0;
-    margin: 10px;
+    margin: 5px;
+    padding: 0 5px;
     margin-right: 40px;
-    border: 1px dashed $dim;
+    border: 1px dashed $light;
     position: relative;
   }
   .btn--col {
@@ -30,5 +31,13 @@
     right: -35px;
     top: 50%;
     transform: translate(0, -80%);
+  }
+
+  .postCreate {
+    input, textarea {
+      padding: 5px;
+      margin: 5px 0;
+      border: 1px solid #000;
+    }
   }
 }

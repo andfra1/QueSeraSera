@@ -1,4 +1,5 @@
 var main = document.getElementById('wrap'); 
+var addPost = document.getElementById('addpost'); 
 var addRowBttn = document.getElementsByClassName('jsAddRow');
 var rmRowBttn = document.getElementsByClassName('jsRmRow');
 var row = document.getElementsByClassName('row');
@@ -19,14 +20,15 @@ console.log(rmRowBttn);
 
 function addRow() {
   var colArr = [];
-  var rowElement = document.createElement('DIV');
+  var rowElement = document.createElement('FIELDSET');
   rowElement.setAttribute('class','row');
-  for(var colBttns = 0; colBttns < 9; colBttns++) {
-    colArr.push('<button class="btn btn--col jsAddCol">col ' + (colBttns+1) + '</button>');
-  }
-  colArr.push('<button class="btn btn--minus jsRmCol">-</button>');
+  // for(var colBttns = 0; colBttns < 9; colBttns++) {
+  //   colArr.push('<button class="btn btn--col jsAddCol">col ' + (colBttns+1) + '</button>');
+  // }
+  colArr.push('<input type="text" name="post-title" value="Post title"><textarea name="post-content" id="" cols="30" rows="10">Some text here</textarea><button class="btn btn--minus jsRmRow">-</button>');
+  colArr.push('<button type="button" class="btn btn--minus jsRmCol">-</button>');
   rowElement.innerHTML = colArr.splice(',').join('');
-  main.appendChild(rowElement);
+  addPost.appendChild(rowElement);
 
   for(var rowRmBttn = 0; rowRmBttn < rmRowBttn.length; rowRmBttn++) {
     rmRowBttn[rowRmBttn].addEventListener('click', removeRow, false);
