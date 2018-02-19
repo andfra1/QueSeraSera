@@ -9,3 +9,14 @@
   font-weight: normal;
   font-style: normal;
 }
+
+@font-face {
+  font-family: 'raleway';
+  src: url('../fonts/raleway-regular-webfont.eot');
+  src: url('../fonts/raleway-regular-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/raleway-regular-webfont.woff2') format('woff2'),
+       url('../fonts/raleway-regular-webfont.woff') format('woff'),
+       url('../fonts/raleway-regular-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}

@@ -10,7 +10,7 @@ $defaultMail = "some@some.com";
 	<div class="login">
 		<div class="login__wrapper">
 			<div class="borderOnly"></div>
-			<form method="POST" action="signup.php" class="login__form">
+			<form method="POST" action="html/comp/signup.php" class="login__form">
 				<p class="login__error">
 					<?php
 						//form validation

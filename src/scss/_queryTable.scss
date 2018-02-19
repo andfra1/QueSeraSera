@@ -1,0 +1,30 @@
+.queryTable {
+  width: 100%;
+  color: $dark;
+  thead {
+    tr {
+      font-size: 1rem;
+      font-weight: 700;
+      color: $light;
+      td {
+        padding: 8px;
+      }
+    }
+  }
+  tbody {
+    tr {
+      font-size: 0.9rem;
+      background-color: $color1;
+      &:nth-child(2n) {
+        background-color: $color3;
+      }
+      &:hover {
+        background-color: $dim;
+        color: $light;
+      }
+      td {
+        padding: 8px;
+      }
+    }
+  }
+}

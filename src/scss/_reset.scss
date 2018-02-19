@@ -2,12 +2,25 @@
   margin: 0;
   padding: 0;
   border: 0;
+  box-sizing: border-box;
+}
+
+a, a:link, a:visited, a:focus {
+  text-decoration: none;
+  color: inherit;
 }
 
 label,
-input,
-svg {
+input{
   display: block;
   font-family: inherit;
   outline: none;
+}
+
+ul {
+  list-style: none;
+}
+
+small {
+font-size: 0.85em;
 }
