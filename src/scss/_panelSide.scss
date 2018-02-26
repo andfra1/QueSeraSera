@@ -16,34 +16,20 @@ $itemMargin: 10px;
   &__subMenu {
     position: relative;
     display: block;
-    padding: 10px;
+    padding: 10px 0;
     font-size: 1rem;
     color: $light;
     &Item {
       position: relative;
       display: block;
-      margin: $itemMargin 0;
       transition: all 0.4s;
-      //background-color: opacify($lightAdj, 0.1);
       height: 35px;
-      // &:after {
-      //   content: '';
-      //   position: absolute;
-      //   display: block;
-      //   width: $itemMargin;
-      //   height: $itemMargin;
-      //   background-color: $orange;
-      //   transform: translate(-$itemMargin/2, -50%) rotate(45deg);
-      //   top: 50%;
-      //   left: 100%;
-      //   z-index: -1;
-      // }
       & svg {
         transition: all 0.4s;
       }
       &>a {
         @include AinLI;
-        padding: 5px 10px;
+        padding: 5px 20px;
       }
       &:hover {
         background-color: opacify($lightAdj, 0.3);
@@ -59,17 +45,21 @@ $itemMargin: 10px;
     visibility: hidden;
     opacity: 0;
     position: absolute;
-    top: -$itemMargin * 2;
+    top: -$itemMargin;
     left: 100%;
     width: 100%;
     transition: 0.3s;
     &Item {
       display: block;
       position: relative;
-      margin: $itemMargin 0;
+      //margin: $itemMargin 0;
       transition: all 0.4s;
       background-color: $panel;
       height: 35px;
+      border-bottom: 1px solid $orange;
+      &:last-child {
+        border-bottom: none;
+      }
       &:hover {
         background-color: #666a6e;
         //color: $dim;

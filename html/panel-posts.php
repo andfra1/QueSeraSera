@@ -74,15 +74,12 @@ if(!isset($_SESSION['login'])) {
               <table class="queryTable">
                 <thead>
                   <tr>
-                    <td>
-                      ID
-                    </td>
-                    <td>
-                      Title
-                    </td>
-                    <td>
-                      Last update
-                    </td>
+                    <?php
+                      $tableLabels = ['id', 'title', 'last update'];
+                      foreach($tableLabels as $val) {
+                        echo ("<td>" . $val . "</td>");
+                      }
+                    ?>
                   </tr>
                 </thead>
                 <tbody>

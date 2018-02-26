@@ -12,19 +12,19 @@ if (isset($_POST['submit'])) //check if submitted
 
   //empty fields
   if (empty($fname) || empty($lname) || empty($mail) || empty($login) || empty($password)) {
-    header("Location: ../../signup_form.php?signup=empty");
+    header("Location: ../panel-accounts.php?create&?signup=empty");
     exit();
   }
   else {
     //check character is valid
     if(!preg_match("/^[a-zA-Z]*$/", $fname) || !preg_match("/^[a-zA-Z]*$/", $lname)) {
-      header("Location: ../../signup_form.php?signup=invalid");
+      header("Location: ../panel-accounts.php?create&?signup=invalid");
       exit();
     }
     else {
       //check email is valid
       if(!filter_var($mail, FILTER_VALIDATE_EMAIL)) {
-        header("Location: ../../signup_form.php?signup=email");
+        header("Location: ../panel-accounts.php?create&?signup=email");
         exit();
       }
       else {
@@ -33,7 +33,7 @@ if (isset($_POST['submit'])) //check if submitted
         $resultCheck = mysqli_num_rows($result);
         
         if($resultCheck > 0) {
-          header("Location: ../../signup_form.php?signup=userexists");
+          header("Location: ../panel-accounts.php?create&?signup=userexists");
           exit();
         }
         else {
@@ -42,7 +42,7 @@ if (isset($_POST['submit'])) //check if submitted
           //insert data to db
           $insert = "INSERT INTO users (`fname`, `lname`, `mail`, `login`, `pass`) VALUES ('$fname', '$lname', '$mail', '$login', '$hashPass');";
           $r = mysqli_query($conn, $insert);
-          header("Location: ../../index.php?signup=success");
+          header("Location: ../panel-accounts.php?create&?signup=success");
           exit();
         }
       }
@@ -50,7 +50,7 @@ if (isset($_POST['submit'])) //check if submitted
   }
 }
 else {
-  header("Location: ../../signup_form.php?wtf");
+  header("Location: ./panel-accounts.php?create&?wtf");
   exit();
 }
 ?>

@@ -14,6 +14,7 @@ for(var rowBttn = 0; rowBttn < addRowBttnLen; rowBttn++) {
   addRowBttn[rowBttn].addEventListener('click', addRow, false);
 }
 
+if(rmRowBttn>0) {
 rmRowBttn[0].addEventListener('click', removeRow, false);
 
 console.log(rmRowBttn);
@@ -47,5 +48,5 @@ function removeRow() {
 function addCol() {
   document.write = 'dupa';
 }
-
+}
 });
